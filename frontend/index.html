@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Wilson | AWS Cloud Portfolio</title>
+  <meta
+    name="description"
+    content="AWS cloud engineering portfolio for Joseph Wilson featuring cloud projects, certifications, and hands-on AWS experience."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">JW<span class="accent">Cloud</span></a>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">AWS • Cloud • Infrastructure • DevOps Growth</p>
+          <h1>Joseph Wilson</h1>
+          <h2>Aspiring Cloud Engineer building real AWS projects</h2>
+          <p class="hero-description">
+            I’m building hands-on cloud projects to strengthen my AWS, infrastructure,
+            automation, and platform engineering skills. This portfolio showcases
+            practical work across serverless architecture, cloud security, and
+            modern deployment workflows.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.html">View Resume</a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="status-row">
+            <span class="status-dot"></span>
+            <span>Actively building AWS portfolio projects</span>
+          </div>
+
+          <div class="hero-stat">
+            <span class="stat-label">Current Focus</span>
+            <span class="stat-value">AWS Cloud Resume Platform</span>
+          </div>
+
+          <div class="hero-stat">
+            <span class="stat-label">Learning Path</span>
+            <span class="stat-value">AWS • Terraform • Kubernetes</span>
+          </div>
+
+          <div class="hero-stat">
+            <span class="stat-label">Visitor Count</span>
+            <span class="stat-value" id="visitor-count">Loading...</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h3>Building toward high-value cloud engineering skills</h3>
+        </div>
+
+        <div class="card">
+          <p>
+            This site is part of a hands-on AWS project designed to demonstrate
+            practical cloud skills through a real deployed solution. The project
+            includes static hosting, CDN delivery, DNS, TLS, a serverless backend,
+            database integration, and monitoring.
+          </p>
+          <p>
+            The long-term roadmap expands this platform with Terraform,
+            CI/CD automation, stronger security controls, and container/Kubernetes
+            implementations to reflect the technologies most often requested in
+            cloud and DevOps roles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Skills & Certifications</p>
+          <h3>Core areas this portfolio is designed to highlight</h3>
+        </div>
+
+        <div class="grid three-col">
+          <article class="card skill-card">
+            <h4>Cloud & Infrastructure</h4>
+            <ul>
+              <li>AWS Fundamentals</li>
+              <li>S3</li>
+              <li>CloudFront</li>
+              <li>Route 53</li>
+              <li>IAM</li>
+              <li>CloudWatch</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <h4>Backend & Automation</h4>
+            <ul>
+              <li>Lambda</li>
+              <li>API Gateway</li>
+              <li>DynamoDB</li>
+              <li>Python</li>
+              <li>Git & GitHub</li>
+              <li>CI/CD Roadmap</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <h4>Certifications</h4>
+            <ul>
+              <li>AWS Cloud Practitioner</li>
+              <li>CompTIA Security+</li>
+              <li>CompTIA Network+</li>
+              <li>CompTIA A+</li>
+              <li>Project+</li>
+              <li>ITIL</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h3>Featured work and planned build-out</h3>
+        </div>
+
+        <div class="grid project-grid">
+          <article class="card project-card featured">
+            <div class="project-tag">Featured Project</div>
+            <h4>AWS Cloud Resume Platform</h4>
+            <p>
+              A production-style personal portfolio platform hosted on AWS.
+              Phase 1 focuses on S3 static hosting, CloudFront, Route 53, ACM,
+              API Gateway, Lambda, DynamoDB, IAM, and CloudWatch.
+            </p>
+            <div class="tech-list">
+              <span>S3</span>
+              <span>CloudFront</span>
+              <span>Route 53</span>
+              <span>Lambda</span>
+              <span>API Gateway</span>
+              <span>DynamoDB</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-tag muted">Planned</div>
+            <h4>Terraform Infrastructure Version</h4>
+            <p>
+              Rebuild the platform with Infrastructure as Code so environments
+              can be provisioned consistently and deployed through version-controlled
+              automation.
+            </p>
+            <div class="tech-list">
+              <span>Terraform</span>
+              <span>AWS</span>
+              <span>IaC</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-tag muted">Planned</div>
+            <h4>CI/CD Deployment Pipeline</h4>
+            <p>
+              Add automated validation and deployment workflows so frontend and
+              backend changes can move from GitHub into AWS with minimal manual work.
+            </p>
+            <div class="tech-list">
+              <span>GitHub Actions</span>
+              <span>CI/CD</span>
+              <span>Automation</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-tag muted">Planned</div>
+            <h4>Containers & Kubernetes Expansion</h4>
+            <p>
+              Extend the portfolio with containerized workloads and an orchestration
+              path through ECS and eventually Kubernetes to strengthen platform
+              engineering credibility.
+            </p>
+            <div class="tech-list">
+              <span>Docker</span>
+              <span>ECS</span>
+              <span>Kubernetes</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="banner-card">
+          <div>
+            <p class="section-label">Live AWS Feature</p>
+            <h3>Visitor counter integration</h3>
+            <p>
+              This section will connect to an AWS API in Phase 1 and display a
+              live visitor count backed by Lambda and DynamoDB.
+            </p>
+          </div>
+          <div class="banner-counter">
+            <span class="banner-counter-label">Current Count</span>
+            <span class="banner-counter-value" id="visitor-count-banner">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h4>Joseph Wilson</h4>
+        <p>Cloud portfolio project built to demonstrate hands-on AWS skills.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:your_email@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
