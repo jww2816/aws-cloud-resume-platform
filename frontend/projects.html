@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Wilson | Projects</title>
+  <meta
+    name="description"
+    content="Projects page for Joseph Wilson featuring AWS cloud engineering, Terraform, CI/CD, security, and Kubernetes roadmap work."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">JW<span class="accent">Cloud</span></a>
+      <nav class="main-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-compact">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h1>Cloud Engineering Project Roadmap</h1>
+        <h2>Hands-on AWS work designed to demonstrate practical, job-relevant skills</h2>
+        <p class="hero-description">
+          This portfolio is being built as a phased cloud engineering project that starts
+          with a serverless AWS resume platform and expands into Infrastructure as Code,
+          CI/CD automation, security hardening, observability, and container orchestration.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#featured-project">View Featured Project</a>
+          <a class="btn btn-secondary" href="resume.html">View Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-project" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Featured Project</p>
+          <h3>AWS Cloud Resume Platform</h3>
+        </div>
+
+        <article class="card project-detail-card">
+          <div class="project-detail-header">
+            <div>
+              <div class="project-tag">Current Build</div>
+              <h4>A production-style serverless portfolio platform on AWS</h4>
+            </div>
+            <span class="resume-date">Phase 1</span>
+          </div>
+
+          <p>
+            The AWS Cloud Resume Platform is a public-facing portfolio site built to
+            demonstrate hands-on experience with core AWS services used in modern cloud
+            environments. It combines static hosting, content delivery, DNS, TLS, a
+            serverless API, database-backed features, IAM permissions, and monitoring.
+          </p>
+
+          <div class="project-detail-grid">
+            <div class="card inner-card">
+              <h5>Phase 1 Scope</h5>
+              <ul class="resume-list">
+                <li>Static frontend hosted in Amazon S3</li>
+                <li>Global delivery with CloudFront</li>
+                <li>Custom domain with Route 53</li>
+                <li>HTTPS certificate through ACM</li>
+                <li>Visitor counter API with API Gateway and Lambda</li>
+                <li>DynamoDB-backed visitor count storage</li>
+                <li>IAM role permissions and CloudWatch logging</li>
+              </ul>
+            </div>
+
+            <div class="card inner-card">
+              <h5>What This Demonstrates</h5>
+              <ul class="resume-list">
+                <li>AWS fundamentals applied in a real project</li>
+                <li>Serverless architecture concepts</li>
+                <li>Frontend to backend cloud integration</li>
+                <li>Operational awareness through monitoring</li>
+                <li>Version-controlled project development in GitHub</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tech-list">
+            <span>S3</span>
+            <span>CloudFront</span>
+            <span>Route 53</span>
+            <span>ACM</span>
+            <span>API Gateway</span>
+            <span>Lambda</span>
+            <span>DynamoDB</span>
+            <span>IAM</span>
+            <span>CloudWatch</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Roadmap</p>
+          <h3>Planned expansions for higher-value cloud engineering skills</h3>
+        </div>
+
+        <div class="grid project-grid">
+          <article class="card project-card">
+            <div class="project-tag muted">Phase 2</div>
+            <h4>Terraform Infrastructure as Code</h4>
+            <p>
+              Rebuild the AWS platform using Terraform so infrastructure can be defined,
+              versioned, and deployed consistently across environments.
+            </p>
+            <ul class="resume-list compact-list">
+              <li>Modularize AWS resources</li>
+              <li>Create reusable configurations</li>
+              <li>Prepare for dev/prod environment separation</li>
+            </ul>
+            <div class="tech-list">
+              <span>Terraform</span>
+              <span>IaC</span>
+              <span>AWS</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-tag muted">Phase 3</div>
+            <h4>CI/CD Automation Pipeline</h4>
+            <p>
+              Add automated deployment workflows to reduce manual changes and demonstrate
+              modern DevOps delivery practices.
+            </p>
+            <ul class="resume-list compact-list">
+              <li>Automated validation and deployment</li>
+              <li>GitHub-driven release flow</li>
+              <li>Reduced manual deployment steps</li>
+            </ul>
+            <div class="tech-list">
+              <span>GitHub Actions</span>
+              <span>CI/CD</span>
+              <span>Automation</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-tag muted">Phase 4</div>
+            <h4>Security Hardening & Observability</h4>
+            <p>
+              Improve the platform with stronger security controls, logging, alerting,
+              and operational visibility to better reflect production-ready cloud design.
+            </p>
+            <ul class="resume-list compact-list">
+              <li>WAF and access hardening</li>
+              <li>Expanded CloudWatch visibility</li>
+              <li>Cost awareness and governance controls</li>
+            </ul>
+            <div class="tech-list">
+              <span>WAF</span>
+              <span>CloudWatch</span>
+              <span>CloudTrail</span>
+              <span>Budgets</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-tag muted">Phase 5</div>
+            <h4>Containers & Kubernetes Expansion</h4>
+            <p>
+              Extend the portfolio into containerized workloads and orchestration to
+              build skills aligned with cloud platform and DevOps engineering roles.
+            </p>
+            <ul class="resume-list compact-list">
+              <li>Containerized application workloads</li>
+              <li>ECS or Fargate stepping stone</li>
+              <li>Kubernetes/EKS learning path</li>
+            </ul>
+            <div class="tech-list">
+              <span>Docker</span>
+              <span>ECS</span>
+              <span>Fargate</span>
+              <span>Kubernetes</span>
+              <span>EKS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Project Strategy</p>
+          <h3>Why this portfolio is being built in phases</h3>
+        </div>
+
+        <div class="grid two-col">
+          <article class="card">
+            <h4>Build Something Real First</h4>
+            <p>
+              The first priority is creating a public, working AWS project that can be
+              shown to recruiters and hiring managers. That means finishing a polished,
+              deployed platform before layering in more advanced tooling.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Add Industry-Recognized Skills in Layers</h4>
+            <p>
+              After the core platform is complete, the same project becomes the foundation
+              for Terraform, CI/CD, security, and Kubernetes work. This creates a much
+              stronger story than isolated practice labs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Target Skill Stack</p>
+          <h3>Technologies this portfolio is designed to showcase</h3>
+        </div>
+
+        <article class="card">
+          <div class="tech-list">
+            <span>AWS</span>
+            <span>Serverless</span>
+            <span>S3</span>
+            <span>CloudFront</span>
+            <span>Route 53</span>
+            <span>IAM</span>
+            <span>API Gateway</span>
+            <span>Lambda</span>
+            <span>DynamoDB</span>
+            <span>CloudWatch</span>
+            <span>Terraform</span>
+            <span>GitHub Actions</span>
+            <span>WAF</span>
+            <span>CloudTrail</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>EKS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h4>Joseph Wilson</h4>
+        <p>Projects roadmap for the AWS Cloud Resume Platform and future cloud engineering work.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

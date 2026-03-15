@@ -557,4 +557,58 @@ a:hover {
   }
 }
 
+.project-detail-card {
+  padding: 1.5rem;
+}
+
+.project-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-detail-header h4 {
+  margin: 0.35rem 0 0;
+  color: var(--heading);
+  font-size: 1.35rem;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.inner-card {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.inner-card h5 {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  color: var(--heading);
+  font-size: 1rem;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.compact-list li + li {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 900px) {
+  .project-detail-header,
+  .project-detail-grid,
+  .two-col {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
+
 }
